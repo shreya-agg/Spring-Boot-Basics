@@ -1,10 +1,12 @@
 # Spring-Boot-Basics
-basics on spring boot applications and how to work with it
+Basics on spring boot applications and how to work with it.
 
 What is Spring Boot?
+
 Spring Boot is an open-source Java-based framework used to create standalone, production-ready Spring applications with minimal configuration. It is built on top of the Spring Framework and simplifies dependency management, configuration, and deployment.
 
 Key Features of Spring Boot:
+
 Auto-Configuration: Automatically configures Spring applications based on the dependencies present in your project.
 Standalone: No need for a standalone application server; embedded servers like Tomcat, Jetty, or Undertow are provided.
 Dependency Management: Comes with a starter dependency system for quick setup.
@@ -25,6 +27,7 @@ Steps to Create a Spring Boot Application
    Extract the project and open it in your preferred IDE.
 3. Create the Main Application Class
 The main class should be annotated with @SpringBootApplication.
+
 Example:
 package com.example.demo;
 
@@ -39,6 +42,7 @@ public class DemoApplication {
 }
 
 4. Add Dependencies in pom.xml or build.gradle
+5. 
 For Maven ():
 <dependencies>
     <dependency>
@@ -54,6 +58,7 @@ dependencies {
 
 5. Create REST Controller
 Annotate your controller class with @RestController and map endpoints using @getMapping, @PostMapping, etc.
+
 Example:
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -75,6 +80,7 @@ The application will start on http://localhost:8080 (default port)
 Use a browser, Postman, or curl to test endpoints, e.g., http://localhost:8080/hello.
 
 Common Annotations in Spring Boot
+
 @SpringBootApplication: Combines @configuration, @ComponentScan, and @EnableAutoConfiguration.
 @RestController: Indicates the class handles HTTP requests.
 @GetMapping, @PostMapping, etc.: Maps HTTP endpoints to methods.
